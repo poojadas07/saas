@@ -5,7 +5,7 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 
 const routes: Routes = [{path : '', pathMatch: 'full', redirectTo: '/login'},
-                        { path: 'dashboard', loadChildren: () => import('./home-details/home-details.module').then(m => m.HomeDetailsModule), canActivate : [AuthGuard]},
+                        { path: 'dashboard', loadChildren: () => import('./home-details/home-details.module').then(m => m.HomeDetailsModule)},
                         { path: 'login', component: LoginComponent},
                         { path: 'register', component: RegisterComponent}
                       ];

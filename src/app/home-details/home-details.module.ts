@@ -7,6 +7,7 @@ import { DonateComponent } from './donate/donate.component';
 import { RecieveComponent } from './recieve/recieve.component';
 import { FoodMapComponent } from './food-map/food-map.component';
 import { HomeDetailsRoutingModule } from './home-details-routing.module';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { HomeDetailsRoutingModule } from './home-details-routing.module';
     ContactComponent,
     DonateComponent,
     RecieveComponent,
-    FoodMapComponent
+    FoodMapComponent,
+    HomeComponent
   ],
   imports: [
     CommonModule,
